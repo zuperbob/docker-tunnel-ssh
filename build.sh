@@ -6,8 +6,8 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
 PROJECT_ROOT_DIR="$SCRIPT_DIR"
 
 # Default values
-DOCKER_ORGANIZATIONS="${DOCKER_ORGANIZATIONS:-"docker.io/serversideup ghcr.io/serversideup"}"
-DOCKER_REPOSITORY_NAME="${DOCKER_REPOSITORY_NAME:-"docker-ssh"}"
+DOCKER_ORGANIZATIONS="${DOCKER_ORGANIZATIONS:-"docker.io/zuperbob ghcr.io/zuperbob"}"
+DOCKER_REPOSITORY_NAME="${DOCKER_REPOSITORY_NAME:-"docker-tunnel-ssh"}"
 GITHUB_REF_NAME="${GITHUB_REF_NAME:-""}"
 PRINT_TAGS_ONLY=false
 RELEASE_TYPE="dev"
