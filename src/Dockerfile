@@ -43,13 +43,13 @@ RUN serversideup-dep-install-debian ${PACKAGE_DEPENDENCIES} && \
 # Expose the SSH port
 EXPOSE 2222
 
-LABEL org.opencontainers.image.title="serversideup/docker-ssh" \
+LABEL org.opencontainers.image.title="zuperbob/docker-tunnel-ssh" \
     org.opencontainers.image.description="Simple SSH container. Great for secure connections into clusters." \
-    org.opencontainers.image.url="https://github.com/serversideup/docker-ssh" \
-    org.opencontainers.image.source="https://github.com/serversideup/docker-ssh" \
-    org.opencontainers.image.documentation="https://github.com/serversideup/docker-ssh" \
-    org.opencontainers.image.vendor="ServerSideUp" \
-    org.opencontainers.image.authors="Jay Rogers (@jaydrogers)" \
+    org.opencontainers.image.url="https://github.com/zuperbob/docker-tunnel-ssh" \
+    org.opencontainers.image.source="https://github.com/zuperbob/docker-tunnel-ssh" \
+    org.opencontainers.image.documentation="https://github.com/zuperbob/docker-tunnel-ssh" \
+    org.opencontainers.image.vendor="ZuperBob" \
+    org.opencontainers.image.authors="Roberto Ventura (@zuperbob)" \
     org.opencontainers.image.version="${REPOSITORY_BUILD_VERSION}" \
     org.opencontainers.image.licenses="GPL-3.0-or-later"
 

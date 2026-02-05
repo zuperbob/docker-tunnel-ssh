@@ -141,10 +141,11 @@ if [ ! -f "${ssh_host_key_dir}/ssh_host_rsa_key" ] || [ ! -f "${ssh_host_key_dir
     ssh-keygen -q -N "" -t ecdsa -f "${ssh_host_key_dir}/ssh_host_ecdsa_key"
     ssh-keygen -q -N "" -t ed25519 -f "${ssh_host_key_dir}/ssh_host_ed25519_key"
     
-    # Set proper permissions
-    chmod 600 "${ssh_host_key_dir}"/ssh_host_*_key
-    chmod 644 "${ssh_host_key_dir}"/ssh_host_*_key.pub
 fi
+
+# Set proper permissions
+chmod 600 "${ssh_host_key_dir}"/ssh_host_*_key
+chmod 644 "${ssh_host_key_dir}"/ssh_host_*_key.pub
 
 # Configure allowed IPs
 validate_allowed_ips "${ALLOWED_IPS}"
